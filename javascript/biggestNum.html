@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript6</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+
+  <h2>BiggestNum</h2>
+    <table align="center">
+
+  <tr>
+  <td >FirstNO</td><td><input type="text" id="a" /></td></tr>
+  <td>SecondNO</td><td><input type="text" id="b" /></td></tr>
+    <td>ThirdNO</td><td><input type="text" id="c"/></td></tr>
+    <tr><td style="padding-left: 50%">
+   <button  type="submit" value="login" name="Button" onclick="bigger()">submit</button></td>
+   <td style="padding-left: 30%">
+   <button  type="reset" value="reset" onclick=" ">reset</button>
+   </td>
+ </table>
+    <script>
+
+    function bigger()
+    {
+      var a=Number(document.getElementById("a").value);
+      var b=Number(document.getElementById("b").value);
+      var c=Number(document.getElementById("c").value);
+
+      if(a>b && a>c)
+    window.alert(a+" :A is bigger than B and C");
+      else if(a<b && b>c)
+    window.alert(b+" :B is bigger than A and C");
+      else
+    window.alert(c+"  :c is bigger than A and C");
+    }
+
+        </script>
+    </div>
+  </body>
+</html>

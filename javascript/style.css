@@ -1,0 +1,16 @@
+body{
+  background-image: url('h4.jpeg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+     text-align: center;
+     color: white;
+     padding-top: 200px;
+}
+div{
+  border: 3px solid white;
+  width: 30;
+  height: 300;
+  font-family: verdana;
+  font-size: 200%;
+}

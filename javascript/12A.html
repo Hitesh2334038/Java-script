@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>java script11</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+    <script>
+      function fact( n)
+      {
+        if(n==0)
+        return 1;
+        return fact(n-1)*n;
+      }
+      function ncr(n,r)
+      {
+        var N=fact(n);
+        var R=fact(r);
+        var NR=fact(n-r);
+        return N/(R*NR);
+      }
+      var val=parseInt(prompt("Enter [1] for Factorial && [2] for NCR"));
+    switch(val)
+    {
+      case 1:
+      var n=parseInt(prompt("Enter the num"));
+      document.write(n+" : Factorial is :");
+      document.write(fact(n));
+      break;
+      case 2:
+      var n=parseInt(prompt("Enter the N"));
+      var r=parseInt(prompt("Enter the R"));
+      document.write("NCR is :");
+      document.write(ncr(n,r));
+      break;
+      default :
+      document.write("Wrong input");
+    }
+      </script>
+    </div>
+  </body>
+</html>

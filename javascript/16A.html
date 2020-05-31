@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a=[[1,1,1],[2,2,2],[3,3,3]];
+        var b=[[1,1,1],[2,2,2],[3,3,3]];
+        var c=[[0,0,0],[0,0,0],[0,0,0]];
+var i,j,k;
+document.writeln("Matrix a : <br>");
+      for(i=0;i<3;i++)
+      {
+        for(j=0;j<3;j++)
+        {
+          document.write(a[i][j]+" ");
+
+        }
+          document.write("<br>");
+      }
+      document.write("Matrix b : <br>");
+      for(i=0;i<3;i++)
+      {
+        for(j=0;j<3;j++)
+        {
+          document.write(b[i][j]+" ");
+
+        }
+          document.write("<br>");
+      }
+      document.write("Multiplication Matrix c : <br>");
+      for(i=0;i<3;i++)
+      {
+        for(j=0;j<3;j++)
+        {
+          for(k=0;k<3;k++)
+          {
+          c[i][j]+=a[i][k]*b[k][j];
+        }
+        }
+
+      }
+
+      for(i=0;i<3;i++)
+      {
+        for(j=0;j<3;j++)
+        {
+          document.write(c[i][j]+" ");
+
+        }
+          document.write("<br>");
+      }
+
+    </script>
+  </body>
+</html>
